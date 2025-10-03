@@ -8,9 +8,8 @@ enum SpreadsheetCell {
 }
 
 fn main() {
-
     /* VECTORS */
-    
+
     let v = vec![1, 2, 3, 4, 5];
 
     // let third = &v[2];
@@ -46,9 +45,9 @@ fn main() {
     // Creating a string
     let mut s = String::new();
     let data = "initial contents";
-    let s = data.to_string();
-    let s = "initial contents".to_string();
-    let s = String::from("inital contents");
+    let _s = data.to_string();
+    let _s = "initial contents".to_string();
+    let _s = String::from("inital contents");
 
     // Updating a string
     let mut s1 = String::from("foo");
@@ -107,7 +106,7 @@ fn main() {
     // Updating values - adding a key and value only if a key isn't present
     let mut scores = HashMap::new();
     scores.insert(String::from("Blue"), 10);
-    
+
     scores.entry(String::from("Yellow")).or_insert(50);
     scores.entry(String::from("Blue")).or_insert(50);
     println!("{scores:?}");
